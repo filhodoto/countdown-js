@@ -1,8 +1,8 @@
 html {
     box-sizing: border-box;
-    font-size: 10px;
-    background: #8E24AA;
-    background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);
+    font-size: 8px;
+    background: #42b883;
+    /*background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);*/
 }
 
 *, *:before, *:after {
@@ -26,11 +26,13 @@ body {
 .timer {
     display:flex;
     min-height: 100vh;
-    flex-direction:column;
+    flex-direction: row;
 }
 
 .timer__controls {
     display: flex;
+    flex-direction: column;
+    max-height: 400px;
 }
 
 .timer__controls > * {
