@@ -34,7 +34,7 @@ body {
 
 .timer__controls {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     background: #42b883;
 }
 
@@ -76,10 +76,30 @@ body {
     font-family: 'Oswald', monospace;
 }
 
-.timer__button:hover,
-.timer__button:focus {
+.timer__button.-red {
+    background: #BF2A23;
+}
+
+.timer__button.-green {
+    background: #6DD065;
+}
+
+.timer__button.-orange {
+    background: #F38630;
+}
+
+.timer__button.-blue {
+    background: #68B3AF;
+}
+
+.timer__button[data-time]:hover,
+.timer__button[data-time]:focus {
     background:rgba(0,0,0,0.2);
     outline:0;
+}
+
+.timer__button:disabled {
+    opacity: 0.8;
 }
 
 .display {
